@@ -12,7 +12,7 @@ function App() {
                 <Route exact path = "/play">
                     <MusicPlay />
                 </Route>
-                <Route path="/" render={() => <Redirect to='/play' />} />
+                <Route exact path="/" render={() => <Redirect to='/play' />} />
             </Switch>
         </BrowserRouter>
     </div>

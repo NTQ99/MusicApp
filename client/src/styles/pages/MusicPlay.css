@@ -4,10 +4,11 @@
     height: 100vh;
 }
 .vertical-pane {
-
+    display: flex;
 }
 .vertical-pane.pane1 {
     position: fixed;
+    flex-direction: column;
     width: 50px;
     height: 100%;
     z-index: 1;
@@ -19,8 +20,14 @@
     float: right;
     width: calc(100% - 50px);
     height: 100%;
-    background-image: url('../../assets/background.jpg');
-    background-position: center;
+    background-image: url('../../assets/Web 1920 – music play.png');
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.MusicPlay .icon-button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding: 0;
 }
