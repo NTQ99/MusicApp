@@ -3,10 +3,10 @@
     width: 100vw;
     height: 100vh;
 }
-.vertical-pane {
+.MusicPlay .vertical-pane {
     display: flex;
 }
-.vertical-pane.pane1 {
+.MusicPlay .vertical-pane.pane1 {
     position: fixed;
     flex-direction: column;
     width: 50px;
@@ -15,7 +15,7 @@
     background-color: #fdfdfd;
     box-shadow: 0px 0 20px #707070;
 }
-.vertical-pane.pane2 {
+.MusicPlay .vertical-pane.pane2 {
     position: relative;
     margin-left: 50px;
     width: calc(100% - 50px);
@@ -25,14 +25,31 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.vertical-pane.pane3 {
+.MusicPlay .vertical-pane.pane3 {
     flex: 3;
 }
-.vertical-pane.pane4 {
+.MusicPlay .vertical-pane.pane4 {
     flex: 4;
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 40px;
+}
+.MusicPlay .horizontal-pane {
+    display: flex;
+}
+.MusicPlay .horizontal-pane.pane1 {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+.MusicPlay .horizontal-pane.pane2 {
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
 }
 .MusicPlay .icon-button {
     width: 40px;
@@ -51,7 +68,17 @@
     background-color: #fdfdfdcc;
     transition: width .4s;
 }
-.songName {
+.MusicPlay .audio-control {
+    display: inline-flex;
+}
+.MusicPlay .audio-icon-button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    padding: 0;
+    color: black;
+}
+.MusicPlay .songName {
     display: flex;
     justify-content: center;
     align-items: center;
