@@ -17,7 +17,7 @@
 }
 .vertical-pane.pane2 {
     position: relative;
-    float: right;
+    margin-left: 50px;
     width: calc(100% - 50px);
     height: 100%;
     background-image: url('../../assets/Web 1920 – music play.png');
@@ -25,9 +25,37 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.vertical-pane.pane3 {
+    flex: 3;
+}
+.vertical-pane.pane4 {
+    flex: 4;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 40px;
+}
 .MusicPlay .icon-button {
     width: 40px;
     height: 40px;
     margin: 5px;
     padding: 0;
+}
+.MusicPlay .expand-container {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 52px;
+    width: 0px;
+    height: 100%;
+    box-shadow: 5px 0 10px #707070cc;
+    background-color: #fdfdfdcc;
+    transition: width .4s;
+}
+.songName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Sans MS';
+    font-size: 18pt;
+    font-style: italic;
 }
