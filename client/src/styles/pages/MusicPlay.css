@@ -1,3 +1,11 @@
+@keyframes rotate120deg {
+	from {
+		transform: rotate(29.5deg)  translate(-220px);
+	}
+	to {
+		transform: rotate(150.5deg) translate(-220px);
+	}
+}
 .MusicPlay {
     position: relative;
     width: 100vw;
@@ -20,36 +28,37 @@
     margin-left: 50px;
     width: calc(100% - 50px);
     height: 100%;
-    background-image: url('../../assets/Web 1920 – music play.png');
+    background-image: url('../../assets/background.jpg');
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .MusicPlay .vertical-pane.pane3 {
+    flex-direction: column;
     flex: 3;
 }
 .MusicPlay .vertical-pane.pane4 {
     flex: 4;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 .MusicPlay .horizontal-pane {
     display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
 }
 .MusicPlay .horizontal-pane.pane1 {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    max-width: 90%;
-    max-height: 90%;
+    flex: 2;
 }
 .MusicPlay .horizontal-pane.pane2 {
+    flex: 1;
+}
+.MusicPlay .horizontal-pane.pane3 {
     flex-direction: column;
     flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
+    justify-content: flex-end;
 }
 .MusicPlay .icon-button {
     width: 40px;
@@ -67,6 +76,21 @@
     box-shadow: 5px 0 10px #707070cc;
     background-color: #fdfdfdcc;
     transition: width .4s;
+}
+.MusicPlay .audio-dot-control {
+    z-index: 1;
+	width: 12px;
+	height: 12px;
+    position: absolute;
+    bottom: 38.5px;
+    margin-left: -191.5px;
+}
+.MusicPlay .audio-status {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+    font-style: italic;
+    color: #707070;
+    margin-bottom: 15px;
 }
 .MusicPlay .audio-control {
     display: inline-flex;
